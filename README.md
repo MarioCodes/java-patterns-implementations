@@ -33,10 +33,3 @@ ___
 ### Factory
 Uses factory methods to add an abstraction layout. Allows for example to be able to connect to several databases doing the swap by just changing two parameters in a config file.
 ___
-
-# Algorithms
-___
-## Random Arrangement
-### Fisher-Yates
-Random arrangement for a finite list of items. Guarantees that every item or object is going to be accessed once without duplicates.
-___
