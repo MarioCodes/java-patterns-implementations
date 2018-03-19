@@ -42,3 +42,4 @@ ___
 ###### flyweight
 ###### service provider framework
 ###### bridge
+###### adapter
