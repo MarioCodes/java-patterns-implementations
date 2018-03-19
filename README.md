@@ -9,7 +9,7 @@ DTO is the object which representates an entity of the database, with all its ow
 ___
 
 ## Design
-### Facade
+### Façade
 Helps with MVC. Establishes a new layer to separate and encapsulate the code between view & controller.
 
 ### Singleton
