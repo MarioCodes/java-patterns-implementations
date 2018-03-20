@@ -21,9 +21,9 @@ ___
 ### State
 Allows to change the behaviour of an object through its own state. Depending the state the object is at, allows to manipulate it one way or another.
 Parts:
- * Main Object - It may contain the transitive status which we want to track.
- * Base Interface - Contains the action which will change it's behaviour depending the current state.
- * Possible States - Each one extends the interface and will override the action & its results.
+ * Context - It contains the action which will change depending on the current state. When called this action, it will delegate into the State object saved.
+ * State Interface - Contains the design of the action. The context will save this raw.
+ * Concrete States - Each one extends the interface and will override the action & its results.
  
 ### Memento <--
 Allows to restore an object to a previous state. It makes snapshots of the object and saves them, allowing later to restore any of them.
