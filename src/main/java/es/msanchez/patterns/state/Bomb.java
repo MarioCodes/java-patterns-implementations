@@ -2,20 +2,29 @@ package es.msanchez.patterns.state;
 
 import org.springframework.stereotype.Component;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.extern.slf4j.Slf4j;
 
 /**
- * Class which may have several states.
+ * Context which may have several states.
  */
+@Slf4j
 @Getter
 @Setter
 @Component
-@AllArgsConstructor
 public class Bomb {
 
   private State state;
+
+  public Bomb() {
+    this.state = new StateDisarmed();
+    log.info("Disarmed bomb created.");
+  }
+
+  public void action() {
+    this.state.action(this);
+  }
 
   /**
    * {@inheritDoc}
