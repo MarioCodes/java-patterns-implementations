@@ -39,7 +39,7 @@ ___
 Allows to create beans easily (and fluently) for cases where we have lots of parameters (+4-5), with some of them required and others optional.
 
 
-### Factory <--
+### Factory
 Uses factory methods to add an abstraction layout. Allows for example to be able to connect to several databases doing the swap by just changing two parameters in a config file.
 ___
 
