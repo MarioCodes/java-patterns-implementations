@@ -25,7 +25,7 @@ Parts:
  * State Interface - Contains the design of the action. The context will save this raw.
  * Concrete States - Each one extends the interface and will override the action & its results.
  
-### Memento <--
+### Memento
 Allows to restore an object to a previous state. It makes snapshots of the object and saves them, allowing later to restore any of them.
 Behaviour pattern. It does save snapshots of a class, to be able to recover a previous state of an object. 
 Parts: 
