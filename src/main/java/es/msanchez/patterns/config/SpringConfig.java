@@ -8,7 +8,9 @@ import org.springframework.context.annotation.Configuration;
 @ComponentScan(basePackages = {
     "es.msanchez.patterns.builder.**",
     "es.msanchez.patterns.state.**",
-    "es.msanchez.patterns.memento.**" }, excludeFilters = @Filter(Configuration.class))
+    "es.msanchez.patterns.memento.**",
+    "es.msanchez.patterns.factory.shared.**",
+    "es.msanchez.patterns.factory.spring.**" }, excludeFilters = @Filter(Configuration.class))
 public class SpringConfig {
 
 }
