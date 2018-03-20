@@ -1,7 +1,5 @@
 package es.msanchez.patterns.builder.concrete;
 
-import org.springframework.stereotype.Component;
-
 import lombok.Getter;
 
 /**
@@ -9,7 +7,6 @@ import lombok.Getter;
  * 'Effective Java' (from Joshua Bloch). Usage example in unit tests.
  */
 @Getter
-@Component
 public class NutritionFacts {
 
   private final int servingSize;
