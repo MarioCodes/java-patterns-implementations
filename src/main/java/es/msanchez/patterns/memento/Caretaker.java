@@ -1,20 +1,8 @@
-/**
- * Copyright neusta GmbH 2015. All Rights Reserved
- * Project: java-patterns-implementation
- *
- * auto generated header
- *
- * $Source: $
- * $HeadURL: $
- * $Revision: 1 $
- *
- * $Author: msanchez@neusta.de$
- * $Created On: Mar 20, 2018 - 1:11:08 PM $
- *
- */
 package es.msanchez.patterns.memento;
 
 import java.util.LinkedList;
+
+import org.springframework.stereotype.Component;
 
 import es.msanchez.patterns.utilities.DummyDto;
 import lombok.Getter;
@@ -24,6 +12,7 @@ import lombok.Getter;
  * instances.
  */
 @Getter
+@Component
 public class Caretaker {
 
   private final LinkedList<Memento> mementos = new LinkedList<>();
@@ -36,10 +25,6 @@ public class Caretaker {
       this.mementos.removeFirst();
 
     this.mementos.add(memento);
-  }
-
-  public Memento getMemento(final int index) {
-    return this.mementos.get(index);
   }
 
   public Memento getLastMemento() {
