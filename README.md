@@ -8,26 +8,30 @@ DAO - Design pattern, used to encapsulate the access to a persistence resource (
 DTO is the object which representates an entity of the database, with all its own properties to be manipulated.
 ___
 
-## Design
+## Structural
 ### Façade
 Helps with MVC. Establishes a new layer to separate and encapsulate the code between view & controller.
 
 ### Singleton
 Limits and sets a way to access an unique object instantiation during the whole execution of a program.
 
+___
+
+## Behavioural
 ### State
 Allows to change the behaviour of an object through its own state. Depending the state the object is at, allows to manipulate it one way or another.
-
+Parts:
+ * Main Object - It may contain the transitive status which we want to track.
+ * Base Interface - Contains the action which will change it's behaviour depending the current state.
+ * Possible States - Each one extends the interface and will override the action & its results.
+ 
 ### Memento <--
 Allows to restore an object to a previous state. It makes snapshots of the object and saves them, allowing later to restore any of them.
-
 Behaviour pattern. It does save snapshots of a class, to be able to recover a previous state of an object. 
 Parts: 
  * Originator - Class from which we save its states. e.g. a DTO. 
  * Memento - It's a Snapshot which saves the content of the Originator in a punctual state. 
  * Caretaker - Class where we do save the several Mementos. From it we do save or load Mementos.
- 
-### State? <--
 ___
 
 ## Creational
