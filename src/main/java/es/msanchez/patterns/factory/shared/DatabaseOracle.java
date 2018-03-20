@@ -1,4 +1,4 @@
-package es.msanchez.patterns.factory;
+package es.msanchez.patterns.factory.shared;
 
 import org.springframework.stereotype.Component;
 

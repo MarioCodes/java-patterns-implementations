@@ -1,8 +1,13 @@
-package es.msanchez.patterns.factory;
+package es.msanchez.patterns.factory.manual;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
 import org.junit.Test;
+
+import es.msanchez.patterns.factory.shared.Database;
+import es.msanchez.patterns.factory.shared.DatabaseMySQL;
+import es.msanchez.patterns.factory.shared.DatabaseOracle;
+import es.msanchez.patterns.factory.shared.DatabaseTypes;
 
 public class FactoryTest {
 

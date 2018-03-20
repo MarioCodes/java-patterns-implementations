@@ -1,4 +1,4 @@
-package es.msanchez.patterns.factory;
+package es.msanchez.patterns.factory.shared;
 
 /**
  * Abstract implementation of a Database. To use ANSI SQL here.
