@@ -1,8 +1,11 @@
 package es.msanchez.patterns.state;
 
+import lombok.extern.slf4j.Slf4j;
+
 /**
  * One of the several status the base object may be at.
  */
+@Slf4j
 public class StateDisarmed implements State {
 
   /**
@@ -10,7 +13,8 @@ public class StateDisarmed implements State {
    */
   @Override
   public void action(final Bomb bomb) {
-    bomb.setState(this);
+    bomb.setState(new StateArmed());
+    log.info("Bomb Armed!");
   }
 
   /**

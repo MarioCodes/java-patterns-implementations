@@ -10,7 +10,7 @@ public class StateArmed implements State {
    */
   @Override
   public void action(final Bomb bomb) {
-    bomb.setState(this);
+    throw new UnsupportedOperationException("Bomb exploded");
   }
 
   /**
