@@ -48,3 +48,4 @@ ___
 ###### service provider framework
 ###### bridge
 ###### adapter
+###### template method
